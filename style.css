@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #52796f;        /* Muted green or teal */
+    --primary-color-dark: #405b51;   /* Darker shade of the primary color */
+    --secondary-color: #7e8a89;     /* Soft gray or muted blue */
+    --text-dark: #333333;           /* Dark text color for content */
+    --text-light: #888888;          /* Improved text color for descriptions */
+    --extra-light: #f5f5f5;        /* Soft background color for sections */
+    --white: #ffffff;               /* Pure white for backgrounds and accents */
+    --max-width: 1200px;            /* Maximum content width */
+}
+
+.gradient-bg {
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-color-dark));
+}
+
+body {
+    background: var(--secondary-color);
+}
+
+.header__image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    padding: 5rem 1rem;
+    margin: auto;
+}
+
+.section__header {
+    margin-bottom: 5px;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.section__subheader {
+    color: var(--text-light);
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn__primary {
+    color: var(--text-dark);
+    border: 2px solid var(--text-light);
+    background-color: transparent;
+}
+
+.btn__secondary {
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.btn__secondary:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+}
+
+/* Apply the same styles to the "Login" button */
+.btn__primary {
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.btn__primary:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav__bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    flex: 1;
+}
+
+.nav__logo a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    padding: 5px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.link a:hover {
+    color: var(--primary-color);
+}
+
+.nav__btns {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.home__container {
+    background-color: var(--extra-light);
+}
+
+.about__container,
+.resources__container,
+.team__container {
+    background-color: var(--extra-light);
+}
+
+.debate-listing {
+    background-color: var(--extra-light);
+    border: 1px solid var(--extra-light);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.debate-listing img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--extra-light);
+    border-radius: 5px;
+}
+
+.debate-listing h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin: 1rem 0;
+}
+
+.debate-listing p {
+    color: var(--text-light);
+    margin: 0.5rem 0;
+}
+
+.debate-listing button {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 1rem auto;
+}
+
+.debate-listing button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.team-member,
+.advisor {
+    background-color: var(--extra-light);
+    border: 1px solid var(--extra-light);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.team-member img,
+.advisor img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--extra-light);
+    border-radius: 50%;
+}
+
+.team-member h3,
+.advisor h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin: 1rem 0;
+}
+
+.team-member p,
+.advisor p {
+    color: var(--text-light);
+    margin: 0.5rem 0;
+}
+
+.resource {
+    background-color: var(--extra-light);
+    border: 1px solid var(--extra-light);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.resource h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin: 1rem 0;
+}
+
+.resource p {
+    color: var(--text-light);
+    margin: 0.5rem 0;
+}
+
+.resource a {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+
+.resource a:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer__col h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer__col p {
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.footer__col a {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--extra-light);
+    transition: 0.3s;
+}
+
+.footer__col a span {
+    margin-right: 5px;
+}
+
+.footer__col a:hover {
+    color: var(--primary-color);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials span {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.debate-listing:hover {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s;
+}
+
+.debate-listing button:hover {
+    background-color: var(--text-dark);
+    color: var(--white);
+    transition: background-color 0.3s, color 0.3s;
+}
